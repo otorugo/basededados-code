@@ -110,7 +110,7 @@ CREATE TABLE OfertaDisciplina (
 CREATE TABLE Matricula (
     idMatricula INT PRIMARY KEY,
     data_matricula DATE,
-    notas DECIMAL(5,2), -- Alterado de TEXT para DECIMAL(5,2)
+    notas DECIMAL(5,2),
     desconto DECIMAL(5,2),
     bolsa BOOLEAN,
     status VARCHAR(20),

@@ -196,6 +196,9 @@ INSERT INTO Curso VALUES (1, 'CUR9', 'Geografia', 'DEP9', 'Graduação', 'Ementa
 INSERT INTO Curso VALUES (2, 'CUR10', 'Artes Visuais', 'DEP10', 'Graduação', 'Ementa do curso de Artes Visuais', 2700, 45);
 
 -- Populando Disciplina
+
+INSERT INTO Disciplina VALUES (1, 'Chefe1', 'Sobrenome1', '(11)90000-0001', 60, 'Matemática Discreta', 'Sala 305');
+INSERT INTO Disciplina VALUES (2, 'Chefe2', 'Sobrenome2', '(11)90000-0002', 30, 'Fundamentos de Economia', 'Sala 1101');
 INSERT INTO Disciplina VALUES (1, 'Chefe1', 'Sobrenome1', '(11)90000-0001', 60, 'Livro de Algoritmos', 'Sala 101');
 INSERT INTO Disciplina VALUES (2, 'Chefe2', 'Sobrenome2', '(11)90000-0002', 45, 'Material de Circuitos', 'Sala 202');
 INSERT INTO Disciplina VALUES (1, 'Chefe3', 'Sobrenome3', '(11)90000-0003', 60, 'Cálculo Avançado', 'Sala 303');

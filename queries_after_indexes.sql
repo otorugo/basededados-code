@@ -10,9 +10,9 @@ SELECT
 FROM
     Usuario U
 JOIN
-    Aluno A ON U.nome = A.nome AND U.sobrenome = A.sobrenome AND U.numero_de_telefone = A.numero_de_telefone
+    Aluno A ON U.nome = A.nome AND U.sobrenome = A.sobrenome
 JOIN
-    Matricula M ON A.nome = M.nome AND A.sobrenome = M.sobrenome AND A.numero_de_telefone = M.numero_de_telefone
+    Matricula M ON A.nome = M.nome AND A.sobrenome = M.sobrenome
 WHERE
     M.data_matricula BETWEEN '2024-01-01' AND '2024-01-31'
 ORDER BY
@@ -39,7 +39,7 @@ SELECT
 FROM
     Disciplina D
 JOIN
-    Professor P ON D.responsavel_nome = P.nome AND D.responsavel_sobrenome = P.sobrenome AND D.responsavel_telefone = P.numero_de_telefone
+    Professor P ON D.responsavel_nome = P.nome AND D.responsavel_sobrenome = P.sobrenome
 WHERE
     to_tsvector('portuguese', D.material_didatico) @@ to_tsquery('portuguese', 'Banco & Dados');
 

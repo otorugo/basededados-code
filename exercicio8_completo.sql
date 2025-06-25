@@ -21,7 +21,7 @@ FROM
 JOIN
     Aluno A ON M.nome = A.nome AND M.sobrenome = A.sobrenome AND M.numero_de_telefone = A.numero_do_telefone
 JOIN
-    Usuario U ON A.nome = U.nome AND A.sobrenome = U.sobrenome AND A.numero_de_telefone = U.numero_de_telefone
+    Usuario U ON A.nome = U.nome AND A.sobrenome = U.sobrenome
 JOIN
     OfertaDisciplina OD ON M.idOfertaDisciplina = OD.idOfertaDisciplina
 JOIN
@@ -72,7 +72,7 @@ FROM
 JOIN
     Aluno A ON M.nome = A.nome AND M.sobrenome = A.sobrenome AND M.numero_de_telefone = A.numero_do_telefone
 JOIN
-    Usuario U ON A.nome = U.nome AND A.sobrenome = U.sobrenome AND A.numero_de_telefone = U.numero_de_telefone
+    Usuario U ON A.nome = U.nome AND A.sobrenome = U.sobrenome
 JOIN
     OfertaDisciplina OD ON M.idOfertaDisciplina = OD.idOfertaDisciplina
 JOIN

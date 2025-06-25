@@ -1,7 +1,7 @@
 services:
   postgres:
     image: postgres:16
-    container_name: postgres_instance
+    container_name: postgres
     restart: always
     environment:
       POSTGRES_USER: postgres
@@ -10,6 +10,7 @@ services:
     network_mode: host
     volumes:
       - pg_data:/var/lib/postgresql/data
+      - ./:/app
 
 
 volumes:
